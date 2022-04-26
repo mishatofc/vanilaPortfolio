@@ -3,8 +3,8 @@
 body {
     background-color: #191923;
     background-image: url(img/bg.svg);
-    
-    
+
+
 
 }
 
@@ -26,21 +26,17 @@ body {
 #navbar {
 
     background-color: #7972ffb2;
-
-
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 10;
-
 
 }
 
 .navbar {
 
     background-image: url(img/navBg.svg);
-
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(6px);
 }
 
 .brand {
@@ -179,5 +175,18 @@ footer {
     color: #eb4d7c;
 
 
+
+}
+
+.error1{
+    font-size: 500%;
+
+
+
+}
+
+.error2{
+
+        font-size: 150%;
 
 }
