@@ -1,9 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Hind+Siliguri&family=Inter:wght@400;600;700&display=swap');
 
 body {
-    background-color: #191923;
+    background-color: #1c1c1c;
     background-image: url(img/bg.svg);
 
+
+
+}
+
+
+::-webkit-scrollbar {
+    background-color: #37346e;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #7972ffb2;
+
+}
+
+::selection {
+    color: rgb(243, 243, 243);
+    background-color: #817affe1;
 
 
 }
@@ -25,7 +43,8 @@ body {
 
 #navbar {
 
-    background-color: #7972ffb2;
+    background-color: #1414141e;
+
     position: fixed;
     top: 0;
     width: 100%;
@@ -35,8 +54,7 @@ body {
 
 .navbar {
 
-    background-image: url(img/navBg.svg);
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(8px);
 }
 
 .brand {
@@ -48,6 +66,35 @@ body {
 }
 
 
+/* the hover of links animation below */
+
+.nav-link {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #817affd3;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+
+
+
 .interFont {
 
     font-family: 'Inter', sans-serif;
@@ -57,13 +104,13 @@ body {
 
 .wrapper {
     margin-top: 64px;
-    height: 120vh;
+    height: 100vh;
 
 }
 
 .heroImg {
-    width: 700px;
-    margin: 50px 0px;
+    width: 600px;
+    margin: 30px 0px;
 
 
 
@@ -92,6 +139,7 @@ body {
 
 
 
+
 .nameSubtitle {
     font-weight: 600;
     color: #C1C1C1;
@@ -103,7 +151,7 @@ body {
     font-weight: 700;
     line-height: 30px;
     width: 80px;
-    border-bottom: 2px solid #ffffff83;
+    border-bottom: 2px solid #817affd3;
     padding-bottom: 5px;
 
 }
@@ -111,6 +159,8 @@ body {
 .aboutText {
 
     color: #C1C1C1;
+    text-align: justify;
+
 
 }
 
@@ -142,6 +192,7 @@ body {
 .quote-box {
     border: 1px solid #7972ffb2;
     padding: 30px 20px;
+    border-radius: 10px;
 
 }
 
@@ -178,15 +229,15 @@ footer {
 
 }
 
-.error1{
+.error1 {
     font-size: 500%;
 
 
 
 }
 
-.error2{
+.error2 {
 
-        font-size: 150%;
+    font-size: 150%;
 
 }
